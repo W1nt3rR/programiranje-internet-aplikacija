@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tabela.css">
+    <style>
+        .purple {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="4">Seminar</th>
+        </tr>
+        <tr>
+            <td colspan="2">Schedule</td>
+            <td colspan="2" rowspan="2">Topics</td>
+        </tr>
+        <tr>
+            <td>Begin</td>
+            <td>End</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 am</td>
+            <td rowspan="2" class="purple">5:00 pm</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr>
+            <td>Valid: DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Tuesday</td>
+            <td>8:00 am</td>
+            <td>11:00 am</td>
+            <td rowspan="2">XPath Transformation</td>
+        </tr>
+        <tr>
+            <td rowspan="2">11:00 am</td>
+            <td rowspan="2" class="green">2:00 pm</td>
+        </tr>
+        <tr>
+            <td rowspan="2">XSL Transformation</td>
+        </tr>
+        <tr>
+            <td class="green">2:00 am</td>
+            <td style="background-color: purple;">5:00 pm</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 am</td>
+            <td class="green">12:00 pm</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </table>
+</body>
+</html>
