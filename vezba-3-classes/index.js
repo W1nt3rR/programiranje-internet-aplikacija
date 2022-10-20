@@ -12,4 +12,4 @@ class Car {
 
 let myCar = new Car ("VW Passat B5.5", "2003");
 
-document.getElementById("demo").innerHTML = `My car is ${myCar.age()} years old.`
+document.getElementById("demo").textContent = `My car is ${myCar.age()} years old.`
