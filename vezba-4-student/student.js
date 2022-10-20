@@ -36,3 +36,9 @@ let pictures = ["./wallpapers/wallhaven-pkw6y3.jpg", "./wallpapers/wallhaven-2e3
 
 let student1 = new Student(123456, "Ramiz", "Sabovic", 3, "Softversko Inzenjerstvo", pictures);
 student1.render("content");
+
+let student2 = new Student(123456, "Ramiz", "Sabovic", 3, "Softversko Inzenjerstvo", pictures);
+student2.render("content");
+
+let student3 = new Student(123456, "Ramiz", "Sabovic", 3, "Softversko Inzenjerstvo", pictures);
+student3.render("content");
