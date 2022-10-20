@@ -4,12 +4,14 @@ class Car {
         this.year = year;
     }
 
-    age() {
-        let date = new Date();
-        return date.getFullYear() - this.year;
+    age(x) {
+        return x - this.year;
     }
 }
 
+let date = new Date();
+let year = date.getFullYear();
+
 let myCar = new Car ("VW Passat B5.5", "2003");
 
-document.getElementById("demo").textContent = `My car, ${myCar.name}, is ${myCar.age()} years old.`
+document.getElementById("demo").textContent = `My car, ${myCar.name}, is ${myCar.age(year)} years old.`
