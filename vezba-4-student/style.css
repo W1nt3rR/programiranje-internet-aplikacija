@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    min-height: 100vh;
+}
+
+.student {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    text-align: center;
+    padding: 32px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+}
+
+.student h1, h2 {
+    margin: 8px;
+}
+
+.pictures {
+    width: 100%;
+}
+
+.pictures img {
+    width: 100%;
+}
