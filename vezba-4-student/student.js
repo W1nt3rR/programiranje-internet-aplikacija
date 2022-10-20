@@ -32,8 +32,7 @@ class Student {
     }
 }
 
-let pictures = ["./wallpapers/wallhaven-2e3x6m.png", "./wallpapers/wallhaven-2e3x6m.png"];
+let pictures = ["./wallpapers/wallhaven-pkw6y3.jpg", "./wallpapers/wallhaven-2e3x6m.png"];
 
 let student1 = new Student(123456, "Ramiz", "Sabovic", 3, "Softversko Inzenjerstvo", pictures);
-
 student1.render("content");
