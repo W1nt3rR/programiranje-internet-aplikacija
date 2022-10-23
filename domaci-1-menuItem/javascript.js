@@ -31,6 +31,10 @@ class DynamicMenu {
         this.items.push(item);
     }
 
+    addItem (name, address, cssClass) {
+        this.items.push(new MenuItem(name, address, cssClass));
+    }
+
     removeItem (itemName) {
         this.items = this.items.filter((item) => {
             return item.name != itemName;
@@ -38,6 +42,6 @@ class DynamicMenu {
     }
 
     render () {
-        
+
     }
 }
