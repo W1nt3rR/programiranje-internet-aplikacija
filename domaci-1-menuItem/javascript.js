@@ -18,7 +18,12 @@ class MenuItem {
 }
 
 class DynamicMenu {
-    constructor () {
+    constructor (containerID) {
+        this.containerID = containerID;
         this.items = [];
+    }
+
+    setContainerID (containerID) {
+        this.containerID = containerID;
     }
 }
