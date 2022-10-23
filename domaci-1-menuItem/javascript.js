@@ -44,6 +44,7 @@ class DynamicMenu {
     render () {
         const container = document.getElementById(this.containerID);
         const menu = document.createElement("div");
+        menu.classList = "dynamicMenu";
 
         this.items.map((item) => {
             const menuItem = document.createElement("a");
@@ -60,5 +61,8 @@ class DynamicMenu {
 const menu = new DynamicMenu ("container");
 
 menu.addItem ("item1", "https://wallhaven.cc/w/9mjoy1", "class1");
+menu.addItem ("item2", "https://wallhaven.cc/w/9mjoy1", "class2");
+menu.addItem ("item3", "https://wallhaven.cc/w/9mjoy1", "class3");
+menu.addItem ("item4", "https://wallhaven.cc/w/9mjoy1", "class1");
 
 menu.render();
