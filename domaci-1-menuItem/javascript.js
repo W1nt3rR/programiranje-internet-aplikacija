@@ -47,11 +47,19 @@ class DynamicMenu {
         menu.classList = "dynamicMenu";
 
         this.items.map((item) => {
-            const menuItem = document.createElement("a");
-            menuItem.textContent = item.name;
-            menuItem.href = item.address;
-            menuItem.classList = item.cssClass;
-            menu.appendChild(menuItem);
+            const menuAnchor = document.createElement("a");
+            menuAnchor.href = item.address;
+            
+            const menuText = document.createElement("p");
+            menuText.textContent = item.name;
+            
+            const menuItem = document.createElement("div");
+            menuItem.classList.add(item.cssClass);
+            menuItem.classList.add("menuItem");
+
+            menuItem.appendChild(menuText);
+            menuAnchor.appendChild(menuItem);
+            menu.appendChild(menuAnchor);
         })
 
         container.appendChild(menu);
