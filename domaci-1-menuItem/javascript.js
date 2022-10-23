@@ -27,7 +27,7 @@ class DynamicMenu {
         this.containerID = containerID;
     }
 
-    addItem (item) {
+    addExisitngItem (item) {
         this.items.push(item);
     }
 
