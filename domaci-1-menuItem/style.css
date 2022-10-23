@@ -48,3 +48,7 @@
 .menuItem:hover {
     filter: brightness(1.1);
 }
+
+.menuItem:active {
+    filter: brightness(0.9);
+}
