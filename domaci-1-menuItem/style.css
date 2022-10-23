@@ -9,3 +9,30 @@
 .class3 {
     color: blue;
 }
+
+#container {
+    display: flex;
+}
+
+.dynamicMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 2px solid aqua;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.dynamicMenu a {
+    background-color: turquoise;
+    border-radius: 8px;
+    min-width: 128px;
+    height: 32px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+.dynamicMenu a:hover {
+    filter: brightness(1.2);
+}
