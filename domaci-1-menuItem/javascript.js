@@ -56,3 +56,9 @@ class DynamicMenu {
         container.appendChild(menu);
     }
 }
+
+const menu = new DynamicMenu ("container");
+
+menu.addItem ("item1", "https://wallhaven.cc/w/9mjoy1", "class1");
+
+menu.render();
