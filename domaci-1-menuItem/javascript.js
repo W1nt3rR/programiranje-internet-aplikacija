@@ -8,6 +8,13 @@ class MenuItem {
         this.address = address;
         this.cssClass = cssClass;
     }
+
+    isValid () {
+        if(!this.name || !this.address)
+            return false;
+
+        return true;
+    }
 }
 
 class DynamicMenu {
