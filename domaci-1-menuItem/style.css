@@ -24,15 +24,27 @@
 }
 
 .dynamicMenu a {
+    text-decoration: none;
+}
+
+.menuItem {
     background-color: turquoise;
     border-radius: 8px;
     min-width: 128px;
     height: 32px;
     text-align: center;
     text-decoration: none;
-    transition: all 200ms;
+    transition: all 250ms;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.dynamicMenu a:hover {
+.menuItem p {
+    margin: 0;
+}
+
+.menuItem:hover {
     filter: brightness(1.2);
 }
