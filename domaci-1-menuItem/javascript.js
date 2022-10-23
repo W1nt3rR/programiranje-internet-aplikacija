@@ -42,6 +42,17 @@ class DynamicMenu {
     }
 
     render () {
+        const container = document.getElementById(this.containerID);
+        const menu = document.createElement("div");
 
+        this.items.map((item) => {
+            const menuItem = document.createElement("a");
+            menuItem.textContent = item.name;
+            menuItem.href = item.address;
+            menuItem.classList = item.cssClass;
+            menu.appendChild(menuItem);
+        })
+
+        container.appendChild(menu);
     }
 }
