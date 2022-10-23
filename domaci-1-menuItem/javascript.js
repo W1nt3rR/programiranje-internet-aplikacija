@@ -26,4 +26,18 @@ class DynamicMenu {
     setContainerID (containerID) {
         this.containerID = containerID;
     }
+
+    addItem (item) {
+        this.items.push(item);
+    }
+
+    removeItem (itemName) {
+        this.items = this.items.filter((item) => {
+            return item.name != itemName;
+        })
+    }
+
+    render () {
+        
+    }
 }
