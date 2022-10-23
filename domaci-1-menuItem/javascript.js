@@ -73,4 +73,7 @@ menu.addItem ("item2", "https://wallhaven.cc/w/9mjoy1", "class2");
 menu.addItem ("item3", "https://wallhaven.cc/w/9mjoy1", "class3");
 menu.addItem ("item4", "https://wallhaven.cc/w/9mjoy1", "class1");
 
+const item = new MenuItem("existing", "https://wallhaven.cc/w/e7jj6r");
+menu.addExisitngItem(item);
+
 menu.render();
