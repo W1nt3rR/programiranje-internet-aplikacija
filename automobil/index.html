@@ -9,23 +9,31 @@
 	</head>
 	<body>
 		<div id="container">
-			<div id="leva">leva</div>
+			<div id="leva">left</div>
 			<div id="centar">
+				<div id="controls">
+					<button id="AgeButton">Sort by Age</button>
+					<button id="PriceButton">Sort by price</button>
+					<select id="order">
+						<option value="true">Ascending</option>
+						<option value="false">Descending</option>
+					</select>
+				</div>
 				<table>
 					<thead>
 						<tr>
-							<th>Naziv</th>
-							<th>Broj Vrata</th>
-							<th>Kubikaza</th>
-							<th>Godiste</th>
-							<th>Cena</th>
+							<th>Name</th>
+							<th># of Doors</th>
+							<th>Displacement</th>
+							<th>Age</th>
+							<th>Price</th>
 							<th></th>
 						</tr>
 					</thead>
 					<tbody id="parent"></tbody>
 				</table>
 			</div>
-			<div id="desna">desna</div>
+			<div id="desna">right</div>
 		</div>
 
 		<script src="javascript.js"></script>
